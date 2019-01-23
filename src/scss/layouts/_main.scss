@@ -1,5 +1,5 @@
 main {
-  margin-top: 100px;
+  margin-top: 150px;
   max-width: 1075px;
   margin-right: auto;
   margin-left: auto;
@@ -12,10 +12,12 @@ main {
     margin-top: 2vh;
   }
   @include tablet-landscape-down {
+    margin-top: 50px;
     margin-left: 10vw;
     margin-right: 10vw;
   }
   @include tablet-portrait-down {
+    margin-top: 50px;
     margin-left: 3vw;
     margin-right: 3vw;
     display: grid;
