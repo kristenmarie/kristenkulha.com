@@ -1,8 +1,13 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/reset';
 @import 'base/body';
 @import 'base/typography';
 
 @import 'components/fluid-nav';
+@import 'components/intro';
+
+@import 'layouts/grid';
+@import 'layouts/main';
 

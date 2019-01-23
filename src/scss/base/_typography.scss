@@ -3,6 +3,11 @@
   src: url(../assets/fonts/HKGrotesk/TTF/HKGrotesk-Regular.ttf) format("truetype");
 }
 
+// @font-face {
+//   font-family: HK Grotesk Bold;
+//   src: url(../assets/fonts/HKGrotesk/TTF/HKGrotesk-Bold.ttf) format("truetype");
+// }
+
 body {
   font-family: $font;
   font-size: $baseFontSize;

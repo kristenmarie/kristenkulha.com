@@ -1,0 +1,23 @@
+main {
+  margin-top: 100px;
+  max-width: 1075px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  h1 {
+    font-weight: bold;
+  }
+  section:not(:nth-child(1)), .associations {
+    margin-top: 2vh;
+  }
+  @include tablet-landscape-down {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  @include tablet-portrait-down {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    display: grid;
+  }
+}

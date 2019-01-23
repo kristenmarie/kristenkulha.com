@@ -1,0 +1,11 @@
+@mixin tablet-portrait-down {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape-down {
+  @media screen and (max-width: 1095px) {
+    @content;
+  }
+}
