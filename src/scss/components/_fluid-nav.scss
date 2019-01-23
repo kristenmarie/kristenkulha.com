@@ -1,0 +1,150 @@
+.fluid-nav {
+  top: 0;
+  background: $royal-blue;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  //Only have this so we can use state :checked
+  .nav-toggle {
+    display: none;
+  }
+  
+  //Because this label is for the ID of the checkbox,
+  //It can be used to toggle the nav.
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    //Hamburger
+    span, span::before, span::after {
+      display: block;
+      background: $background-color;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
+      position: relative;
+    }
+    span::before, span::after {
+      content: '';
+      position: absolute;
+    }
+    span::before {
+      bottom: 7px;
+    }
+    span::after {
+      top: 7px;
+    }
+
+  }
+
+  nav {
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: $royal-blue;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      margin-bottom: 1em;
+      margin-right: 1em;
+    }
+    a {
+      color: $background-color;
+      text-decoration: none;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      opacity: 0;
+      //Animation for when nav bar is collapsing.
+      transition: opacity 150ms ease-in-out;
+    }
+    a:hover {
+      color: $background-color;
+    }
+  }
+
+  .logo {
+    color: $background-color;
+    margin: $navLogoMargin 0 $navLogoMargin 0;
+  }
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  //Nav a links fade in
+  opacity: 1;
+  //Animation for when nav is opening.
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+@media screen and (min-width: 900px) {
+  .fluid-nav {
+    display: grid;
+    //1fr spaces are for side margins
+    //auto is for the logo
+    //minmax for nav lnks
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+
+    .nav-toggle-label {
+      display: none;
+    }
+    .logo {
+      grid-column: 2 / span 1;
+    }
+    nav {
+      //Takes off all styles that were set in mobile version.
+      all: unset;
+      grid-column: 3/4;
+      display: flex; //Stretches out the nav to full height
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        opacity: 1;
+        position: relative;
+      }
+      a::after {
+        content: '';
+        display: block;
+        height: 5px;
+        background: $background-color;
+        position: absolute;
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: center;
+        transition: transform ease-in-out 250ms;
+      }
+      a:hover::after {
+        transform: scale(1,1);
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;        
+      }
+      li {
+        margin-right: 3em;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

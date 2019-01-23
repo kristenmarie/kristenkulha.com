@@ -1,0 +1,38 @@
+@font-face {
+  font-family: HK Grotesk;
+  src: url(../assets/fonts/HKGrotesk/TTF/HKGrotesk-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: $font;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+}
+
+button {
+  font-size: $smallFont;
+}
+
+h1 {
+  font-size: $h1FontSize;
+}
+
+h2 {
+  font-size: $h2FontSize;
+}
+
+h3 {
+  font-size: $h3FontSize;
+}
+
+h4 {
+  font-size: $h4FontSize;
+}
+
+h5 {
+  font-size: $h5FontSize;
+}
+
+h6 {
+  font-size: $baseFontSize;
+}
