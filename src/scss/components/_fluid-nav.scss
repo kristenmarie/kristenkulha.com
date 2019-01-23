@@ -72,6 +72,9 @@
       opacity: 0;
       //Animation for when nav bar is collapsing.
       transition: opacity 150ms ease-in-out;
+      svg {
+        height: 25px;
+      }
     }
     a:hover {
       color: $background-color;
@@ -102,7 +105,7 @@
     //1fr spaces are for side margins
     //auto is for the logo
     //minmax for nav lnks
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr 240px minmax(700px, 3fr) 1fr;
 
     .nav-toggle-label {
       display: none;
@@ -138,8 +141,10 @@
         transform: scale(1,1);
       }
       ul {
+        height: 100%;
         display: flex;
-        justify-content: flex-end;        
+        justify-content: flex-end;
+        align-items: center;        
       }
       li {
         margin-right: 3em;

@@ -58,7 +58,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'assets/fonts/HKGrotesk/TTF/',    // where the fonts will go
+            outputPath: 'fonts/',    // where the fonts will go
           }
         }]
       },
