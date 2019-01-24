@@ -2,12 +2,14 @@
 @import 'abstracts/mixins';
 
 @import 'base/reset';
+@import 'base/html';
 @import 'base/body';
 @import 'base/typography';
 
 @import 'components/bio';
 @import 'components/contact';
 @import 'components/fluid-nav';
+@import 'components/footer';
 @import 'components/intro';
 @import 'components/work';
 
