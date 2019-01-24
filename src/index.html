@@ -12,7 +12,7 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><a href="#about">Bio</a></li>
+        <li><a href="#bio">Bio</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://drive.google.com/file/d/1Wq2Au_8hhcyJ38hrXQxms-r4Y5vACtXR/view?usp=sharing">Resume</a></li>
@@ -48,11 +48,13 @@
       <div class="bio-text">
         <h1>Never not learning.</h1>
           <p>
-              Raised in Florida, after spending a summer working in Denali National Park with no electricity, I decided the mountains were more my style and made the move to the Pacific Northwest. That was 10 years ago! My passion for technology spans decades and I love a hearty problem to solve. I strive for intuitive, clean solutions that ehance the lives of my colleagues and userbase. I'm infatuated with learning new things and am so excited to be involved in an industry that is constantly evolving. 
+              I started writing code in elementary school. The basic stuff, just some HTML to give my Neopets account some pizzaz. Segue into college where I dove deep by first learning Python and then took more advanced classes using java. While working coffee shop jobs to help pay my way through school I not only gained excellent communication skills,  I also connected with some industry folks which lead to my internship opportunity at Good Mood Creators. There I got my hands dirty with the Unity development environment. It was incredible to be involved with an industry I’ve had a passion for all my life, and meeting other developers with the same interests made me even more driven to accomplish my dreams.
+              At Epicodus I gained my web development exposure. Coming for a more traditional CS background with heaps of Java and C#, admittedly JavaScript and Ruby were weird at first. That quickly changed and I fell in love. This was not just a love of the languages, but a love of the community. The blog writers, open source contributors, and podcasters of the web development world won me over, and I knew I had to be a part of it.
+
             </p>
             <br>
             <p>
-              In my spare time you can find me working on my own video game projects, reading(huge scifi and nordic noir fan), hiking, knitting or playing board games. I love traveling.
+              In my spare time you can find me working on my side projects, reading(huge scifi and nordic noir fan), hiking, knitting or games(video and analog). I love traveling.
             </p>
         </div>
         <div class="bio-image">
@@ -65,6 +67,28 @@
     <section id="work">
       <h1>Work</h1>
       <div class="project">
+          <div class="description">
+              <h2>Heima (A Cozy Front-End Library)</h2>
+              <p>
+                A front-end library that is meant to invoke a homey feeling, the feeling I get when writing code with a hot beverage. 
+
+                Once I started really getting into Sass and front-end development, I noticed I would often go back to older projects and resuse components I made before. My younger brother observed the same and together we decided to start building an open source front end library together. We've started off with smaller components, like simple buttons and animations. We have large plans for Heim and welcome anyone interested to contribute.
+                
+                Heima means "at home" in Icelandic, and that's the feeling we hope it instills in the folks that use it.
+              <p class="tech">
+                HTML Sass/CSS
+              </p>
+              <div class="github-link">
+                  <a href="https://github.com/kristenmarie/heima"><i class="fab fa-github fa-2x"></i></a>
+              </div>
+          </div>
+          <div class="project-photo">
+            <picture>
+              <img src="assets/images/heima.png" alt="A sample of some components of the Heima framework">
+            </picture>
+          </div>
+        </div>
+      <div class="project">
         <div class="description">
             <h2>Math Problem Generator</h2>
             <p>
@@ -73,7 +97,7 @@
               In this project my small team identigied and addressed existing tech debt as well as refactored the existing code base using higher order functions and reduced total lines of code by 60%. Additionally, we throughly documented the code base for those that would follow, identified encountered buts, implemented bug-fixes and added on new features, including accounting for decimal variables within the equations.
             </p>
             <p class="tech">
-              Angular CLI JavaScript TypeScript Jasmine Bower npm Node JS Karma Guppy Bootstrap 4 Nerdamer Lodash
+              Angular CLI JavaScript TypeScript Jasmine Bower NPM Node JS Karma Guppy Bootstrap 4 Nerdamer Lodash
             </p>
             <div class="github-link">
                 <a href="https://github.com/ChalkDoc/generator"><i class="fab fa-github fa-2x"></i></a>
@@ -109,7 +133,46 @@
         </div>
       </div>
       <div class="project">
+          <div class="description">
+            <h2>Timber Tigers Hiking Club</h2>
+            <p>
+              Angular 2 Web Application to keep track of the members of Timber Tigers Hiking Club (a hiking club I started with some friends). 
+              
+              Users can view a list of current members and click on them to navigate to their profile page to view more information about that member. Administrators can add new members, edit exisiting members and remove members that are no longer involved with the club.
+            </p>
+            <p class="tech">
+                Angular 2 HTML CSS Node NPM Bower Bootstrap Firebase
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/kristenmarie/club-manager"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="project-photo">
+          <picture>
+            <img src="assets/images/timber-tigers.png" alt="Timber Tigers Hiking Club Site">
+          </picture>
+        </div>
+      </div>
+      <div class="project">
+          <div class="description">
+            <h2>Doctor Lookup</h2>
+            <p>
+              JavaScript Web Application that utilizes the Better Doctor API.
 
+              This application allows the user to enter a medical issue or name and then returns a list of doctors with their first and last name, address, phone number, website and whether or not ther are accepting new patients. If the API call returns no results, it informs the users that no results were found for their query.
+            </p>
+            <p class="tech">
+                JavaScript HTML CSS Node Gulp Jasmine Karma BetterDoctor API
+            </p>
+            <div class="github-link">
+                <a href="https://github.com/kristenmarie/doctor-lookup"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="project-photo">
+          <picture>
+            <img src="assets/images/doctor-lookup.png" alt="Doctor Lookup Application">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
