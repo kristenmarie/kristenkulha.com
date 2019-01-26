@@ -1,5 +1,3 @@
-![Kristen Kulha](image-link)
-
 # kristenkulha.com
 
 The source code for my personal website [kristenkulha.com](https://kristenkulha.com). 
