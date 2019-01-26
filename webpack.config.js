@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "kristenkulha.com",
+    publicPath: "/",
   },
 
   devtool: 'eval-source-map',
@@ -78,7 +78,6 @@ module.exports = {
     }),
 
     new UglifyJsPlugin(),
-    new ExtractTextPlugin('style.css'),
-    new CleanWebpackPlugin(['dist'])
+    new ExtractTextPlugin('style.css')
   ]
 };

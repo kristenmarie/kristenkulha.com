@@ -7,6 +7,7 @@
     "> 1%",
     "ie > 9"
   ],
+  "homepage": "https://github.com/kristenmarie/kristenkulha.com",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --mode development --open",
