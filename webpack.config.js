@@ -78,6 +78,6 @@ module.exports = {
     }),
 
     new UglifyJsPlugin(),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('styles.scss')
   ]
 };
