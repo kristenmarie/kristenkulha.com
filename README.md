@@ -27,4 +27,4 @@ The source code for my personal website [kristenkulha.com](https://kristenkulha.
 
 ## Old Personal Site
 
-I have completely rebuilt my website as my front-end skills have grown! You can find the old one [here](https://github.com/kristenmarie/kristenmarie.github.io).
+I have completely rebuilt my website as my front-end skills have grown! You can find the old one [here](https://github.com/kristenmarie/kristenmarie.github.io2).
