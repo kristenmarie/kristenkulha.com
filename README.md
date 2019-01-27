@@ -1,3 +1,5 @@
+![kristenkulha.com](https://user-images.githubusercontent.com/15882954/51805893-f621f400-2227-11e9-97e4-fd5105548e92.gif)
+
 # kristenkulha.com
 
 The source code for my personal website [kristenkulha.com](https://kristenkulha.com). 
